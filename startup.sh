@@ -42,7 +42,6 @@ while sleep 60; do
     exit 1
   else
     if [ $checked -ne 1 ]; then
-      mysql -uroot -proot -e "GRANT ALL PRIVILEGES ON *.* TO root@'%' IDENTIFIED BY 'root'; FLUSH PRIVILEGES;"
       checked=1
     fi
   fi
